@@ -63,6 +63,7 @@ export const postsQuery = groq`
 export const postQuery = groq`
   *[_type == "post" && slug.current == $slug][0] {
     ...,
+    "cover": cover.image.asset->,
     author->
   }
 `
