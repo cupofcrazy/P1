@@ -1,8 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# P2 — Next.js and Sanity Studio Repo
+
+This repo combines includes [Next.js](https://nextjs.org/) and [Sanity Studio](https://www.sanity.io/studio), a platform for structured content, to create a full-stack application. It's structured to support a website (`site`) and its content management system (`studio`).
+
+## Project Structure
+
+- `app/`: Contains the Next.js application code, divided into `site` for the frontend and `studio` for the Sanity Studio backend.
+- `components/`: Reusable React components like `header.tsx`, `footer.tsx`, and more.
+- `lib/`: Shared libraries and utilities, particularly for Sanity integration.
+- `utils/`: Utility functions and helpers.
+- `sanity.cli.ts`: Configuration for Sanity CLI commands.
+- `sanity.config.ts`: Sanity Studio configuration.
+- `studio/`: Sanity Studio specific files and schemas.
 
 ## Getting Started
 
-First, run the development server:
+To get the development server running:
 
 ```bash
 npm run dev
@@ -13,24 +25,3 @@ pnpm dev
 # or
 bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
